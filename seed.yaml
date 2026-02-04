@@ -1,6 +1,5 @@
 instances:
   ping-test:
-    spore: page-lander
+    spore: ping-pong
     goal: |
-      Odpowiedz "PONG" i zakoncz.
-      Uzyj set_state("DONE", "pong sent") aby zakonczyc.
+      Przetestuj komunikację między organami przez folder data/
