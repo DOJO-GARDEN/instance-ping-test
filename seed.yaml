@@ -1,0 +1,6 @@
+instances:
+  ping-test:
+    spore: page-lander
+    goal: |
+      Odpowiedz "PONG" i zakoncz.
+      Uzyj set_state("DONE", "pong sent") aby zakonczyc.

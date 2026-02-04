@@ -1,0 +1,3 @@
+[submodule "dojo-core"]
+	path = dojo-core
+	url = https://github.com/DOJO-GARDEN/dojo-way.git
