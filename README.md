@@ -1,17 +1,32 @@
-# instance-ping-test
-
-Test instance for DOJO.
+# DOJO Instance
 
 ## Setup
 
 ```bash
-git clone --recursive https://github.com/DOJO-GARDEN/instance-ping-test.git
+# Sklonuj ten projekt i framework obok siebie
+git clone https://github.com/DOJO-GARDEN/instance-ping-test
+git clone https://github.com/DOJO-GARDEN/dojo-way
+
+# Wejdź do projektu i podlinkuj framework
 cd instance-ping-test
+ln -s ../dojo-way/dojo-core dojo-core
+
+# Uruchom
+python dojo-core/api.py
 ```
 
-## Run
+## Użycie
 
 ```bash
-python dojo-core/dojo-core/api.py
 curl -X POST http://localhost:8000/seed
+curl http://localhost:8000/instances
+```
+
+## Struktura
+
+```
+instance-*/
+├── seed.yaml           ← konfiguracja instancji
+├── dojo-core -> ...    ← symlink do frameworka
+└── .spore-instances/   ← generowane (git ignore)
 ```
